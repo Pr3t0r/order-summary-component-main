@@ -1,0 +1,164 @@
+:root {
+    --Primary-Paleb-lue: hsl(225, 100%, 94%);
+    --Primary-Bright-blue: hsl(245, 75%, 52%);
+
+    --Neutral-Very-pale-blue: hsl(225, 100%, 98%);
+    --Neutral-Desaturated-blue: hsl(224, 23%, 55%);
+    --Neutral-Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+p {
+    font-size: 1.6rem;
+    color: var(--Neutral-Desaturated-blue);
+    line-height: 150%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+    background-color: var(--Primary-Paleb-lue);
+}
+
+main {
+    margin: auto;
+}
+
+footer {
+    margin-bottom: 1em;
+}
+
+.card {
+    border-radius: 25px;
+    background-color: white;
+    max-width: 350px;
+}
+
+.card-img {
+    height: 170px;
+    background: url(./images/illustration-hero.svg) no-repeat;
+    background-size: cover;
+    border-radius: 25px 25px 0 0;
+}
+
+.flex {
+    align-items: center;
+}
+
+.flex, .flex-column {
+    display: flex;
+}
+
+.annual {
+    background-color: var(--Neutral-Very-pale-blue);
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.flex-column {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 2.6rem;
+}
+
+.annual img {
+    margin-right: 2rem;
+}
+
+.annual a {
+    margin-left: auto;
+    font-size: 1.4rem;
+    color: var(--Primary-Bright-blue);
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.annual a:hover {
+    text-decoration: transparent;
+    color: hsla(245, 75%, 52%, 0.7);
+}
+
+span {
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+
+.flex > div {
+    text-align: initial;
+}
+
+.btn {
+    border-radius: 10px;
+    background-color: var(--Primary-Bright-blue);
+    padding: 1em;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: white;
+    box-shadow: 0 10px 40px -15px var(--Primary-Bright-blue);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: hsla(245, 75%, 52%, 0.7);
+}
+
+.cancel {
+    font-weight: 900;
+    font-size: 1.6rem;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.cancel:hover {
+    color: var(--Neutral-Dark-blue);
+}
+
+.txt {
+    /* letter-spacing: 0.8px; */
+    font-size: 1.8rem;
+}
+.annual div p {
+    font-size: 1.6rem;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        background-image: url(./images/pattern-background-mobile.svg);
+        background-repeat: repeat-x;
+
+    }
+}
+
+@media screen and (min-width: 376px) {
+    body {
+        background-image: url(./images/pattern-background-desktop.svg);
+        background-repeat: repeat-x;
+    }
+
+    .card {
+        max-width: 400px;
+    }
+
+    .flex-column {
+        padding: 4rem 3.5rem;
+    }
+}
