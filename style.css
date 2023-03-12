@@ -161,4 +161,8 @@ span {
     .flex-column {
         padding: 4rem 3.5rem;
     }
+
+    .card-img {
+        height: 200px;
+    }
 }
