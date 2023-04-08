@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [solution URL](https://www.frontendmentor.io/solutions/flexbox-vanilla-css-pupZSfKUZn)
-- Live Site URL: [live site URL](https://github.com/Pr3t0r/order-summary-component-main)
+- Live Site URL: [live site URL](https://pr3t0r.github.io/order-summary-component-main/)
 
 ## My process
 
